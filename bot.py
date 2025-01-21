@@ -40,6 +40,6 @@ def send_message(chat_id, message):
     response = requests.get(url, params=params)
     print(response.text)  # نمایش پاسخ ارسال پیام
 
-# اجرای اپلیکیشن Flask
+# اجرای اپلیکیشن Flask و بایند کردن به پورت 5000
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(host='0.0.0.0', port=5000)
